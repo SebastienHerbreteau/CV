@@ -1,0 +1,58 @@
+%hw-burger{/*paramétrage du menu burger*/
+    height: 4px;
+    width: 35px;
+    border-radius: 6px;
+    z-index:1;
+    background-color:white;
+}
+
+
+%block{/*paramétrage pour parcours*/
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left:$pad;
+    padding-right:$pad;
+    
+}
+
+%fond{ /*paramètrage pour le bg du block parcours*/
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+%softhard{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+%hobbies{
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+
+%contact{
+    text-decoration: none;
+    color: white; 
+    width: 33.33%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
